@@ -2,7 +2,7 @@
 2. Ввести пароль от PostgreSQL
 3. Создать базу данных: правой кнопкой мыши на Databases → Create → Database
 4. Назвать базу даных coffee_shop
-5. Нажмать на базу coffee_shop правой кнопкой мыши → Query Tool
+5. Нажать на базу coffee_shop правой кнопкой мыши → Query Tool
 6. Открыть файл backend/init-db.sql
 7. Скопируйте весь текст из файла и вставить в Query Tool
 8. Нажать F5
