@@ -1,0 +1,299 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffdec9;
+            color: #000000;
+        }
+
+        /* Шапка */
+        header {
+            background-color: #ffffff;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100; /* чтобы шапка была выше всего*/
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2c1810cc;
+            margin-left: 20rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 5rem;
+            margin-right: 20rem;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2c1810cc;
+            color: #ffffff;
+        }
+
+        /* Основные стили*/
+        .hero {
+            background-color: #2c1810cc;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: #d4a762;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+
+        /* Блюда */
+        .menu-section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c1810;
+            position: relative;
+        }
+
+        .menu-section h2:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #d4a762;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .menu-content {
+            padding: 1.5rem;
+        }
+
+        .menu-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #2c1810;
+        }
+
+        .menu-content .price {
+            font-size: 1.3rem;
+            color: #d4a762;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .menu-content .bju {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f8f5f0;
+            padding: 0.8rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .menu-content .bju span {
+            text-align: center;
+            flex: 1;
+        }
+
+        .menu-content .bju strong {
+            display: block;
+            color: #2c1810;
+        }
+
+        /* Блог/Акции */
+        .blog-section {
+            background-color: #2c1810;
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .blog-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .blog-container h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #d4a762;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .blog-card {
+            background-color: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #d4a762;
+        }
+
+        .blog-card h3 {
+            color: #d4a762;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .blog-card .date {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Контакты */
+        .contacts-section {
+            padding: 4rem 2rem;
+            background-color: #f8f5f0;
+        }
+
+        .contacts-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2c1810;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item i {
+            background-color: #d4a762;
+            color: #2c1810;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .contact-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .map {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            height: 400px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Подвал */
+        footer {
+            background-color: #1a0f0a;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .footer-logo {
+            font-size: 1.8rem;
+            color: #d4a762;
+            font-weight: bold;
+        }
+
+
+        .copyright {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            width: 100%;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
